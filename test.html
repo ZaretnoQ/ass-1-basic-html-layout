@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppDev Assignment 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        header, nav, footer {
+            flex: 0 0 10vh;
+            background: #2ecc71;
+            border: solid 1px #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        aside {
+            flex: 1 0 20%;
+            border: solid 10px #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #34495e;
+            padding: 10px;
+            color: #fff;
+        }
+        article {
+            flex: 3 0 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e74c3c;
+            padding: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <h1>Navigation</h1>
+    </nav>
+    <main>
+        <aside>
+            <h1>Side Content</h1>
+        </aside>
+        <article>
+            <h1>Main Content</h1>
+        </article>
+        <aside>
+            <h1>Side Content</h1>
+        </aside>
+    </main>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
